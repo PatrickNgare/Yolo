@@ -1,6 +1,8 @@
 version: '2'
 
 services:
+
+#cleint service
   client:
   
     image: patrickngare/client:1
@@ -28,7 +30,7 @@ services:
       - MONGO_URI=mongodb://database:27017/db
 
 
-
+#backend
   database:
     image: mongo
     container_name: mongo-db
