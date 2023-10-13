@@ -13,14 +13,15 @@ A website thats deals with selling second hard clothers
 5. 
 
 ## Requirements and Installation
+```bash
 
+    install node
+    install npm
+    install MongoDB 
 
-    Kindly install the following 
+    Start the mongodb service with sudo service mongod 
 
-    node
-    npm
-    MongoDB and start the mongodb service with sudo service mongod start
-
+       ```
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
