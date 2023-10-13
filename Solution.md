@@ -13,6 +13,7 @@ A website thats deals with selling second hard clothers
 5. 
 
 ## Requirements and Installation
+
 ```bash
 
     install node
@@ -20,8 +21,7 @@ A website thats deals with selling second hard clothers
     install MongoDB 
 
     Start the mongodb service with sudo service mongod 
-
-       ```
+```
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
