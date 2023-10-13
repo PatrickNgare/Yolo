@@ -1,0 +1,45 @@
+version: '2'
+
+services:
+  client:
+  
+    image: patrickngare/client:1
+    container_name: react-cloth
+    ports:
+      - "3000:3000"
+    stdin_open: true
+    tty: true
+    depends_on:
+      - backend
+    networks:
+      - ecommerce-network
+
+  backend:
+  
+    image: patricknhare/backend:1
+    container_name: node-api
+    ports:
+      - "5000:5000"
+    depends_on:
+      - database
+    networks:
+      - ecommerce-network
+    environment:
+      - MONGO_URI=mongodb://database:27017/db
+
+
+
+  database:
+    image: mongo
+    container_name: mongo-db
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - /DevOps/backup:/data/db
+    networks:
+      - ecommerce-network
+    
+networks:
+  ecommerce-network:
+    driver: bridge
