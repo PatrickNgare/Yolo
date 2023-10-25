@@ -24,7 +24,7 @@ A website thats deals with selling second hard clothers
        ```
 
  
-#Technologies used
+## Technologies used
 
     ReactJS
     NodeJS
@@ -36,7 +36,7 @@ A website thats deals with selling second hard clothers
 
 
 
-       #Apps Configuration
+## Apps Configuration
 
 To run the backend app
 
