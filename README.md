@@ -22,6 +22,38 @@ A website thats deals with selling second hard clothers
     Start the mongodb service with sudo service mongod 
 
        ```
+
+ 
+#Technologies used
+
+    ReactJS
+    NodeJS
+    ExpressJS
+    MongoDB
+    Docker
+    Ansible
+    Vagrant
+
+
+
+       #Apps Configuration
+
+To run the backend app
+
+    cd backend + npm install + npm start
+
+To run the containers
+
+    docker compose up + docker ps -a
+
+To run the VM
+
+    vagrant provision + vagrant ssh
+
+
+
+
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
