@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend_app
+spec:
+  selector:
+    matchLabels:
+      app: backend_app
+  template:
+    metadata:
+      labels:
+        app: backend_app
+    spec:
+      containers:
+      - name: backend_app
+        image: patrickngare/backend:1
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 5000
