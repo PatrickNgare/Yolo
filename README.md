@@ -55,7 +55,7 @@ To run the VM
 To Run the Kubernetes 
 
 
- manifests/database.yml
+ kubectl apply -f  manifests/database.yml
 
 ## License
 
