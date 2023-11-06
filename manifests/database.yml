@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: mystatefulset
+  name: ip4_patel_stateful
 spec:
   selector:
     matchLabels:
@@ -15,10 +15,10 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: registry.k8s.io/nginx-slim:0.8
+        image: mongo
         ports:
-        - containerPort: 80
-          name: web
+        - containerPort: 27017
+          name: ongo-db
         volumeMounts:
         - name: www
           mountPath: /usr/share/nginx/html
