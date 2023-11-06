@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: backend_app
+  name: backendapp
 spec:
   selector:
     matchLabels:
-      app: backend_app
+      app: backendapp
   template:
     metadata:
       labels:
-        app: backend_app
+        app: backendapp
     spec:
       containers:
-      - name: backend_app
+      - name: backendapp
         image: patrickngare/backend:1
         resources:
           limits:

@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: ip4_patel_stateful
+  name: ip4atelstateful
 spec:
   selector:
     matchLabels:
-      app: db_app
+      app: dbapp
   serviceName: mongo service 
   replicas: 2
   template:
     metadata:
       labels:
-        app: db_app
+        app: dbapp
     spec:
       containers:
-      - name: db_app
+      - name: dbapp
         image: mongo
         ports:
         - containerPort: 27017

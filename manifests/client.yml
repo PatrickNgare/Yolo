@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: client_app
+  name: clientapp
 spec:
   selector:
     matchLabels:
-      app: client_app
+      app: clientapp
   template:
     metadata:
       labels:
-        app: client_app
+        app: clientapp
     spec:
       containers:
-      - name: client_app
+      - name: clientapp
         image: patrickngare/client:1
         resources:
           limits:

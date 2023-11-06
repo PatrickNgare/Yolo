@@ -52,10 +52,10 @@ To run the containers
 To run the VM
 
     vagrant provision + vagrant ssh
+To Run the Kubernetes 
 
 
-
-
+ manifests/database.yml
 
 ## License
 
