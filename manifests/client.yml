@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: client_app
+spec:
+  selector:
+    matchLabels:
+      app: client_app
+  template:
+    metadata:
+      labels:
+        app: client_app
+    spec:
+      containers:
+      - name: client_app
+        image: patrickngare/client:1
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 3030
